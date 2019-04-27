@@ -20,6 +20,8 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Collection;
 
+
+// 测试分支是否起效
 @SpringBootApplication
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 public class CicmsApp {
