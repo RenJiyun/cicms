@@ -39,8 +39,8 @@ spring:
         stream:
             kafka:
                 binder:
-                    brokers: localhost
-                    zk-nodes: localhost
+                    brokers: 139.159.183.214:9092
+                    zk-nodes: 139.159.183.214:2181
             bindings:
                 output:
                     destination: topic-jhipster
@@ -82,7 +82,7 @@ spring:
         cache: false
 
 server:
-    port: 8080
+    port: 8081
 
 # ===================================================================
 # JHipster specific properties
