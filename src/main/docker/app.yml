@@ -1,0 +1,27 @@
+version: '2'
+services:
+    cicms-app:
+        image: cicms
+        environment:
+            - _JAVA_OPTIONS=-Xmx512m -Xms256m
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:sqlserver://cicms-mssql:1433;database=cicms
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS=kafka
+            - SPRING_CLOUD_STREAM_KAFKA_BINDER_ZK_NODES=zookeeper
+        ports:
+            - 8080:8080
+    cicms-mssql:
+        extends:
+            file: mssql.yml
+            service: cicms-mssql
+    kafka:
+        extends:
+            file: kafka.yml
+            service: kafka
+        environment:
+            - KAFKA_ADVERTISED_HOST_NAME=kafka
+    zookeeper:
+        extends:
+            file: kafka.yml
+            service: zookeeper

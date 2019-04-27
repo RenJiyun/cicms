@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.eggip.cicms",
+      "nativeLanguage": "zh-cn"
+    },
+    "jhipsterVersion": "5.8.2",
+    "applicationType": "monolith",
+    "baseName": "cicms",
+    "packageName": "com.eggip.cicms",
+    "packageFolder": "com/eggip/cicms",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mssql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjhlNjc2ODI2Njk5MDRlMjkwMDRkNzRhY2Y2MmM4Mjk0ZDNmYzkwMTlhNGFhYTE1N2U3YWM0NDI0Y2QzNzQzYzIxYmI5NTRkNzk5Zjk5YmNlODAwMWI1MTdmMjY0ZGM0NDBjNmYyMjQ3MTljM2UwOWEzMDIwZjAxZWZmMzFmZGU=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "zh-cn",
+    "languages": ["zh-cn", "en"]
+  }
+}
