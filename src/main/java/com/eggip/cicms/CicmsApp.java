@@ -22,6 +22,7 @@ import java.util.Collection;
 
 
 // 测试分支是否起效
+// 该分支用于探索jhipster生成的代码结构，并熟悉前端开发
 @SpringBootApplication
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 public class CicmsApp {
